@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{page.title}}</title>
+<meta name="description" content="{{page.description}}">
+{{page.robots}}<meta name="theme-color" content="#0B0D14">
+<link rel="canonical" href="{{page.canonical}}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Warmup">
+<meta property="og:title" content="{{page.title}}">
+<meta property="og:description" content="{{page.description}}">
+<meta property="og:url" content="{{page.canonical}}">
+<meta property="og:image" content="{{siteUrl}}img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B0D14'/%3E%3Cpath d='M16 3c1 8.5 4.5 12 13 13-8.5 1-12 4.5-13 13-1-8.5-4.5-12-13-13 8.5-1 12-4.5 13-13z' fill='%23FF6A2B'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/sofia-sans-extra-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="{{page.key}}">
+{{> sprite}}
+
+<a class="skip" href="#main">Skip to content</a>
+
+{{> header}}
+
+<main id="main">
+
+{{content}}
+
+</main>
+
+{{> footer}}
+
+{{> bag}}
+<script src="js/facts.js" defer></script>
+<script src="js/core.js" defer></script>
+<script src="js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+---
+title: Warmup heated hoodie
+description: Warmup is a heated hoodie that holds the temperature you set. From $149 with two snap-in cells and a free app.
+key: home
+---
+  <section class="hero" id="top">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <h1 class="display display--xl">Heated hoodie that holds the temperature you set</h1>
+        <p class="lede">A sensor in the collar reads your skin, and three thin graphene panels heat to the temperature you pick in the Warmup app.</p>
+        <div class="actions">
+          <a class="btn" href="hoodie.html">Order a hoodie, from ${{price}}</a>
+          <a class="link" href="#heat">See how it heats</a>
+        </div>
+      </div>
+      <div class="hero__photo studio" data-color="bone">
+        <img src="img/hoodie-bone.webp" width="1109" height="1180" fetchpriority="high" alt="Bone Warmup hoodie, front view, with black piping over the shoulders and the Warmup orbit logo across the chest">
+      </div>
+    </div>
+  </section>
+
+  <section class="section heat" id="heat">
+    <div class="wrap">
+      <div class="heat__grid">
+        <div class="heat__text">
+          <h2 class="display">Three panels heat your chest and upper back</h2>
+          <p class="lede">The collar sensor switches the panels on when your skin drops below your setting. Pick any temperature from {{targetMin}} to {{targetMax}}°F.</p>
+          <div class="thermo">
+            <output class="thermo__value" for="target" aria-hidden="true"><span id="target-num">{{targetDefault}}</span><span class="thermo__unit">°F</span></output>
+            <p class="thermo__mode"><strong id="mode-name">Auto</strong> <span id="mode-text">Holds a comfortable skin temperature using the collar sensor.</span></p>
+          </div>
+        </div>
+        <figure class="heat__figure">
+          <img src="img/heat-map.webp" width="1300" height="1281" loading="lazy" alt="Inside the hoodie: two glowing heat panels on the chest, a dashed outline for the panel on the back, a sensor at the collar, a cell in each side seam and the controller at the hem">
+        </figure>
+      </div>
+
+      <div class="scale">
+        <label class="scale__label" for="target">Set your temperature</label>
+        <div class="scale__track">
+          <input type="range" id="target" min="{{targetMin}}" max="{{targetMax}}" step="1" value="{{targetDefault}}" aria-valuetext="{{targetDefault}}°F, Auto">
+          <div class="scale__ticks" aria-hidden="true"></div>
+        </div>
+        <div class="scale__ends" aria-hidden="true"><span>{{targetMin}}°F</span><span>{{targetMax}}°F</span></div>
+        <div class="scale__foot">
+          <div class="scale__modes" role="group" aria-label="Built-in modes">
+            {{html.modeChips}}
+          </div>
+          <a class="link" href="how-it-works.html">How the heating works<svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cells" id="cells">
+    <div class="wrap split">
+      <figure class="photo split__media"><img src="img/cells-seated.webp" width="1600" height="1200" loading="lazy" alt="Black hoodie on a dark background with a cell seated in each side seam at the waist, the left one glowing"></figure>
+      <div class="split__text">
+        <h2 class="display">Two cells sit in the side seams</h2>
+        <p class="lede">One {{cellG}} g cell on each side, so neither side pulls down and nothing hangs on your back or drags on a pocket.</p>
+        <a class="link" href="how-it-works.html#cells">See the cells and how long they last<svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section app" id="app">
+    <div class="wrap app__grid">
+      <div class="app__text">
+        <h2 class="display">The Warmup app runs the heat</h2>
+        <p class="lede">Set the temperature once and the hoodie holds it. The app is free and pairs over Bluetooth.</p>
+        <div class="tabs" role="tablist" aria-orientation="vertical" aria-label="App screens">
+          <button class="tab" type="button" role="tab" id="tab-home" aria-controls="app-panel" aria-selected="true" data-screen="home">
+            <span class="tab__title">See your temperature live</span>
+            <span class="tab__text">Your skin temperature, level, mode and the time left, on one screen.</span>
+          </button>
+          <button class="tab" type="button" role="tab" id="tab-schedule" aria-controls="app-panel" aria-selected="false" tabindex="-1" data-screen="schedule">
+            <span class="tab__title">Preheat before you leave</span>
+            <span class="tab__text">Pick your days and a leave time. The hoodie is warm when you step out and eases off once you are indoors.</span>
+          </button>
+          <button class="tab" type="button" role="tab" id="tab-wash" aria-controls="app-panel" aria-selected="false" tabindex="-1" data-screen="wash">
+            <span class="tab__title">Lock the heat for the wash</span>
+            <span class="tab__text">Wash mode keeps the panels off until you turn it off.</span>
+          </button>
+        </div>
+        <a class="link" href="app.html">See everything the app does<svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></a>
+      </div>
+      <div class="app__phone" role="tabpanel" id="app-panel" aria-labelledby="tab-home" tabindex="0">
+        <img class="is-on" data-screen="home" src="img/app-home.webp" width="527" height="1100" loading="lazy" alt="Warmup app home screen: skin temperature 93.0°F, Auto mode on Medium, 3 h 10 min of runtime left">
+        <img data-screen="schedule" src="img/app-schedule.webp" width="527" height="1100" loading="lazy" alt="Commute schedule screen: preheat before I leave at 7:20 AM, Monday to Friday, with a 10-minute preheat, switched off">
+        <img data-screen="wash" src="img/app-wash.webp" width="527" height="1100" loading="lazy" alt="Wash mode screen: the heating lock switch, shown off, above a checklist to snap out both cells, close the seam flaps, turn the hoodie inside out, wash cold and hang dry">
+      </div>
+    </div>
+  </section>
+
+  <section class="section colors" id="colors">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="display">Bone, Heather or Black</h2>
+        <p class="lede">Every color has the same panels, cells and app. Pick one to start building yours.</p>
+      </div>
+      <div class="wall">
+        {{html.colorWall}}
+      </div>
+    </div>
+  </section>
+
+  <section class="section story" id="story">
+    <div class="wrap split">
+      <figure class="photo photo--tall split__media"><img src="img/back-orbit.webp" width="800" height="1088" loading="lazy" alt="Back view of a person wearing the bone Warmup hoodie with the Orbit line-art print and the Warmup logo"></figure>
+      <div class="split__text">
+        <h2 class="display">Made by two students in Palo Alto</h2>
+        <p class="lede">The heated hoodies we found were sold as work gear, with one heavy battery on one side and three heat settings. We wanted one we would wear to school.</p>
+        <a class="link" href="story.html">Read our story<svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section closer-band">
+    <div class="wrap closer">
+      <p class="display display--xl"><span>Warm like a jacket.</span> <span>Wears like a hoodie.</span></p>
+      <a class="btn" href="hoodie.html">Build your hoodie</a>
+    </div>
+  </section>

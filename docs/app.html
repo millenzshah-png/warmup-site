@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Warmup app | Warmup</title>
+<meta name="description" content="The free Warmup app sets the heat. Five built-in modes, a preheat schedule, a switch for each panel, the charge of each cell and a wash lock.">
+<meta name="theme-color" content="#0B0D14">
+<link rel="canonical" href="https://millenzshah-png.github.io/warmup-site/app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Warmup">
+<meta property="og:title" content="The Warmup app | Warmup">
+<meta property="og:description" content="The free Warmup app sets the heat. Five built-in modes, a preheat schedule, a switch for each panel, the charge of each cell and a wash lock.">
+<meta property="og:url" content="https://millenzshah-png.github.io/warmup-site/app.html">
+<meta property="og:image" content="https://millenzshah-png.github.io/warmup-site/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B0D14'/%3E%3Cpath d='M16 3c1 8.5 4.5 12 13 13-8.5 1-12 4.5-13 13-1-8.5-4.5-12-13-13 8.5-1 12-4.5 13-13z' fill='%23FF6A2B'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/sofia-sans-extra-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="app">
+<svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M8 16L16 8M9 8h7v7"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__row">
+    <a class="nav__logo" href="index.html" aria-label="Warmup home"><img src="img/logo.webp" width="520" height="137" alt="Warmup"></a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="hoodie.html">Hoodie</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="app.html" aria-current="page">App</a>
+      <a href="story.html">Story</a>
+      <a href="help.html">Help</a>
+    </nav>
+    <div class="nav__side">
+      <a class="nav__app" href="https://millenzshah-png.github.io/warmup-app/" target="_blank" rel="noopener">Open the app<span class="sr"> (opens in a new tab)</span></a>
+      <button class="bag-btn" type="button" id="bag-open" aria-haspopup="dialog" aria-label="Open bag, empty">
+        <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>
+        <span>Bag</span>
+        <span class="bag-btn__count" id="bag-count" hidden>0</span>
+      </button>
+      <button class="icon-btn nav__menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="menu" id="menu" aria-label="Menu" hidden>
+    <div class="wrap menu__list">
+      <a href="hoodie.html">Hoodie</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="app.html" aria-current="page">App</a>
+      <a href="story.html">Story</a>
+      <a href="help.html">Help</a>
+      <a href="https://millenzshah-png.github.io/warmup-app/" target="_blank" rel="noopener">Open the app<span class="sr"> (opens in a new tab)</span></a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="section section--first app" id="top">
+    <div class="wrap app__grid">
+      <div class="app__text">
+        <h1 class="display display--xl">The Warmup app</h1>
+        <p class="lede">Set the temperature once and the hoodie holds it. The app is free and works on iPhone and Android.</p>
+        <div class="actions">
+          <a class="btn" href="https://millenzshah-png.github.io/warmup-app/" target="_blank" rel="noopener">Open the app<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg><span class="sr"> (opens in a new tab)</span></a>
+        </div>
+        <p class="fine">This browser version runs with a simulated hoodie, so you can try every screen before you own one.</p>
+      </div>
+      <div class="app__phone app__phone--static">
+        <img class="is-on" src="img/app-home.webp" width="527" height="1100" fetchpriority="high" alt="Warmup app home screen: skin temperature 93.0°F, Auto mode on Medium, 3 h 10 min of runtime left">
+      </div>
+    </div>
+  </section>
+
+  <section class="section modes" id="modes">
+    <div class="wrap app__grid app__grid--flip">
+      <div class="app__phone app__phone--static">
+        <img class="is-on" src="img/app-modes.webp" width="527" height="1100" loading="lazy" alt="Warmup app modes screen listing Auto at 93°F, Sick at 95°F, Commute at 96°F, Outdoor at 97°F and Sleep at 91°F, with a New mode button">
+      </div>
+      <div class="app__text">
+        <h2 class="display">Five modes built in</h2>
+        <dl class="modes__list">
+          <div class="mode"><dt><span class="mode__temp">93<span>°F</span></span><span class="mode__name">Auto</span></dt><dd>Reads the collar sensor every few seconds and pulses heat to keep you level.</dd></div>
+          <div class="mode"><dt><span class="mode__temp">95<span>°F</span></span><span class="mode__name">Sick</span></dt><dd>Gentle, steady warmth for chills. It ramps up slowly and switches off after 2 hours. Comfort, not treatment: see a doctor if a fever lasts more than two days.</dd></div>
+          <div class="mode"><dt><span class="mode__temp">96<span>°F</span></span><span class="mode__name">Commute</span></dt><dd>Warm by the time you step out. Once you have been still indoors for five minutes it drops to Low, and it switches off after 90 minutes.</dd></div>
+          <div class="mode"><dt><span class="mode__temp">97<span>°F</span></span><span class="mode__name">Outdoor</span></dt><dd>Uses the outside temperature from your phone. The colder it is out there, the closer it holds to your target.</dd></div>
+          <div class="mode"><dt><span class="mode__temp">91<span>°F</span></span><span class="mode__name">Sleep</span></dt><dd>Low, even heat while you settle. It fades out on its own and switches off.</dd></div>
+        </dl>
+        <p class="fine">You can also save modes of your own, at any temperature from 88 to 99°F.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section screens" id="screens">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="display">Schedule, zones and battery</h2>
+      </div>
+      <div class="screens__grid">
+        <article class="screen">
+          <h3>Preheat before you leave</h3>
+          <p>Pick your days and a leave time, then choose how far ahead it starts: 5, 10, 15 or 20 minutes. It needs a charged cell in the hoodie and wash mode off.</p>
+          <img src="img/app-schedule.webp" width="527" height="1100" loading="lazy" alt="Commute schedule screen: preheat before I leave at 7:20 AM, Monday to Friday, with a 10-minute preheat, switched off">
+        </article>
+        <article class="screen">
+          <h3>A switch for each panel</h3>
+          <p>Left chest, right chest and upper back each have a switch, with the panel's temperature next to it.</p>
+          <img src="img/app-zones.webp" width="527" height="1100" loading="lazy" alt="Zones screen: the hoodie with both chest panels glowing, and switches for left chest, right chest and upper back, each showing its panel temperature">
+        </article>
+        <article class="screen">
+          <h3>The charge of each cell</h3>
+          <p>See the left and right cell and the time left at your level. The app warns you when the pair drops below 20%.</p>
+          <img src="img/app-battery.webp" width="527" height="1100" loading="lazy" alt="Battery screen: left cell at 82%, right cell at 74%, about 3 h 10 min left at Medium, and the runtime from full at each level">
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wash" id="wash">
+    <div class="wrap app__grid">
+      <div class="app__text">
+        <h2 class="display">Wash mode locks the heat</h2>
+        <p class="lede">Turn it on before washing so the hoodie cannot heat by accident. It stays locked even if the button on the hem is pressed.</p>
+        <a class="link" href="hoodie.html#care">See the four washing steps<svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></a>
+      </div>
+      <div class="app__phone app__phone--static">
+        <img class="is-on" src="img/app-wash.webp" width="527" height="1100" loading="lazy" alt="Wash mode screen: the heating lock switch, shown off, above a checklist to snap out both cells, close the seam flaps, turn the hoodie inside out, wash cold and hang dry">
+      </div>
+    </div>
+  </section>
+
+  <section class="section more" id="more">
+    <div class="wrap app__grid app__grid--flip">
+      <div class="app__phone app__phone--static">
+        <img class="is-on" src="img/app-insights.webp" width="527" height="1100" loading="lazy" alt="This week screen: total heat time, average skin temperature, a bar chart of heat per day and the share of time in each mode">
+      </div>
+      <div class="app__text">
+        <h2 class="display">Also in the app</h2>
+        <dl class="spec-list">
+          <div><dt>Your week</dt><dd>Heat per day for the last seven days, and the modes you used.</dd></div>
+          <div><dt>Profiles</dt><dd>Share one hoodie. Each profile keeps its own target and modes.</dd></div>
+          <div><dt>Updates</dt><dd>The app updates the hoodie over Bluetooth. Keep the phone within 10 feet while it runs.</dd></div>
+          <div><dt>Auto-off</dt><dd>Auto-off when still stops the heat after 30 minutes without movement. It is on by default.</dd></div>
+          <div><dt>Units</dt><dd>°F or °C.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section closer-band">
+    <div class="wrap closer">
+      <p class="display display--xl"><span>Try every screen</span> <span>in your browser.</span></p>
+      <a class="btn" href="https://millenzshah-png.github.io/warmup-app/" target="_blank" rel="noopener">Open the app<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg><span class="sr"> (opens in a new tab)</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <a class="foot__logo" href="index.html" aria-label="Warmup home"><img src="img/logo.webp" width="520" height="137" loading="lazy" alt="Warmup"></a>
+    <nav class="foot__links" aria-label="Footer">
+      <a href="hoodie.html">Build your hoodie</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="app.html">The app</a>
+      <a href="story.html">Our story</a>
+      <a href="help.html">Help</a>
+      <a href="https://millenzshah-png.github.io/warmup-app/" target="_blank" rel="noopener">Open the app<span class="sr"> (opens in a new tab)</span></a>
+    </nav>
+    <p class="foot__note">Free shipping, 30-day returns and a 2-year warranty on the heating and cells.</p>
+    <p class="foot__note foot__copy">© 2026 Warmup</p>
+  </div>
+</footer>
+
+<dialog class="bag" id="bag" aria-labelledby="bag-title">
+  <div class="bag__head">
+    <h2 id="bag-title">Your bag</h2>
+    <button class="icon-btn" type="button" id="bag-close" aria-label="Close bag"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="bag__body" id="bag-body"></div>
+  <div class="bag__foot">
+    <p class="bag__total"><span>Total</span><strong id="bag-total">$0</strong></p>
+    <button class="btn btn--wide" type="button" id="checkout">Check out</button>
+    <p class="fine" id="bag-note" role="status">Free shipping, 30-day returns and a 2-year warranty on the heating and cells.</p>
+  </div>
+  <p class="sr" role="status" aria-atomic="true" id="bag-status"></p>
+</dialog>
+<p class="sr" role="status" aria-atomic="true" id="bag-live"></p>
+<script src="js/facts.js" defer></script>
+<script src="js/core.js" defer></script>
+<script src="js/site.js" defer></script>
+</body>
+</html>

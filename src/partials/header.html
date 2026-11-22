@@ -1,0 +1,33 @@
+<header class="nav">
+  <div class="wrap nav__row">
+    <a class="nav__logo" href="index.html" aria-label="Warmup home"><img src="img/logo.webp" width="520" height="137" alt="Warmup"></a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="hoodie.html"{{current.hoodie}}>Hoodie</a>
+      <a href="how-it-works.html"{{current.how}}>How it works</a>
+      <a href="app.html"{{current.app}}>App</a>
+      <a href="story.html"{{current.story}}>Story</a>
+      <a href="help.html"{{current.help}}>Help</a>
+    </nav>
+    <div class="nav__side">
+      <a class="nav__app" href="{{appUrl}}" target="_blank" rel="noopener">Open the app</a>
+      <button class="bag-btn" type="button" id="bag-open" aria-haspopup="dialog" aria-label="Open bag, empty">
+        <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>
+        <span>Bag</span>
+        <span class="bag-btn__count" id="bag-count" hidden>0</span>
+      </button>
+      <button class="icon-btn nav__menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="menu" id="menu" aria-label="Menu" hidden>
+    <div class="wrap menu__list">
+      <a href="hoodie.html"{{current.hoodie}}>Hoodie</a>
+      <a href="how-it-works.html"{{current.how}}>How it works</a>
+      <a href="app.html"{{current.app}}>App</a>
+      <a href="story.html"{{current.story}}>Story</a>
+      <a href="help.html"{{current.help}}>Help</a>
+      <a href="{{appUrl}}" target="_blank" rel="noopener">Open the app</a>
+    </div>
+  </nav>
+</header>

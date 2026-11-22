@@ -1,0 +1,14 @@
+<dialog class="bag" id="bag" aria-labelledby="bag-title">
+  <div class="bag__head">
+    <h2 id="bag-title">Your bag</h2>
+    <button class="icon-btn" type="button" id="bag-close" aria-label="Close bag"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="bag__body" id="bag-body"></div>
+  <div class="bag__foot">
+    <p class="bag__total"><span>Total</span><strong id="bag-total">$0</strong></p>
+    <button class="btn btn--wide" type="button" id="checkout">Check out</button>
+    <p class="fine" id="bag-note" role="status">{{guarantee}}</p>
+  </div>
+  <p class="sr" role="status" aria-atomic="true" id="bag-status"></p>
+</dialog>
+<p class="sr" role="status" aria-atomic="true" id="bag-live"></p>

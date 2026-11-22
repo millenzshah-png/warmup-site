@@ -1,0 +1,15 @@
+{
+  "name": "warmup-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Warmup heated hoodie storefront. A static site with no dependencies.",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "check": "node tools/check.mjs && node tools/check-facts.mjs",
+    "test": "node tools/build.mjs && node --test \"tests/*.test.mjs\" && node tools/check.mjs && node tools/check-facts.mjs",
+    "serve": "node tools/serve.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

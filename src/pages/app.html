@@ -1,0 +1,98 @@
+---
+title: The Warmup app | Warmup
+description: The free Warmup app sets the heat. Five built-in modes, a preheat schedule, a switch for each panel, the charge of each cell and a wash lock.
+key: app
+---
+  <section class="section section--first app" id="top">
+    <div class="wrap app__grid">
+      <div class="app__text">
+        <h1 class="display display--xl">The Warmup app</h1>
+        <p class="lede">Set the temperature once and the hoodie holds it. The app is free and works on iPhone and Android.</p>
+        <div class="actions">
+          <a class="btn" href="{{appUrl}}" target="_blank" rel="noopener">Open the app<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+        </div>
+        <p class="fine">This browser version runs with a simulated hoodie, so you can try every screen before you own one.</p>
+      </div>
+      <div class="app__phone app__phone--static">
+        <img class="is-on" src="img/app-home.webp" width="527" height="1100" fetchpriority="high" alt="Warmup app home screen: skin temperature 93.0°F, Auto mode on Medium, 3 h 10 min of runtime left">
+      </div>
+    </div>
+  </section>
+
+  <section class="section modes" id="modes">
+    <div class="wrap app__grid app__grid--flip">
+      <div class="app__phone app__phone--static">
+        <img class="is-on" src="img/app-modes.webp" width="527" height="1100" loading="lazy" alt="Warmup app modes screen listing Auto at 93°F, Sick at 95°F, Commute at 96°F, Outdoor at 97°F and Sleep at 91°F, with a New mode button">
+      </div>
+      <div class="app__text">
+        <h2 class="display">Five modes built in</h2>
+        <dl class="modes__list">
+          {{html.modeList}}
+        </dl>
+        <p class="fine">You can also save modes of your own, at any temperature from {{targetMin}} to {{targetMax}}°F.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section screens" id="screens">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="display">Schedule, zones and battery</h2>
+      </div>
+      <div class="screens__grid">
+        <article class="screen">
+          <h3>Preheat before you leave</h3>
+          <p>Pick your days and a leave time, then choose how far ahead it starts: {{preheatOptions}}. It needs a charged cell in the hoodie and wash mode off.</p>
+          <img src="img/app-schedule.webp" width="527" height="1100" loading="lazy" alt="Commute schedule screen: preheat before I leave at 7:20 AM, Monday to Friday, with a 10-minute preheat, switched off">
+        </article>
+        <article class="screen">
+          <h3>A switch for each panel</h3>
+          <p>Left chest, right chest and upper back each have a switch, with the panel's temperature next to it.</p>
+          <img src="img/app-zones.webp" width="527" height="1100" loading="lazy" alt="Zones screen: the hoodie with both chest panels glowing, and switches for left chest, right chest and upper back, each showing its panel temperature">
+        </article>
+        <article class="screen">
+          <h3>The charge of each cell</h3>
+          <p>See the left and right cell and the time left at your level. The app warns you when the pair drops below {{lowBatteryPct}}%.</p>
+          <img src="img/app-battery.webp" width="527" height="1100" loading="lazy" alt="Battery screen: left cell at 82%, right cell at 74%, about 3 h 10 min left at Medium, and the runtime from full at each level">
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wash" id="wash">
+    <div class="wrap app__grid">
+      <div class="app__text">
+        <h2 class="display">Wash mode locks the heat</h2>
+        <p class="lede">Turn it on before washing so the hoodie cannot heat by accident. It stays locked even if the button on the hem is pressed.</p>
+        <a class="link" href="hoodie.html#care">See the four washing steps<svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></a>
+      </div>
+      <div class="app__phone app__phone--static">
+        <img class="is-on" src="img/app-wash.webp" width="527" height="1100" loading="lazy" alt="Wash mode screen: the heating lock switch, shown off, above a checklist to snap out both cells, close the seam flaps, turn the hoodie inside out, wash cold and hang dry">
+      </div>
+    </div>
+  </section>
+
+  <section class="section more" id="more">
+    <div class="wrap app__grid app__grid--flip">
+      <div class="app__phone app__phone--static">
+        <img class="is-on" src="img/app-insights.webp" width="527" height="1100" loading="lazy" alt="This week screen: total heat time, average skin temperature, a bar chart of heat per day and the share of time in each mode">
+      </div>
+      <div class="app__text">
+        <h2 class="display">Also in the app</h2>
+        <dl class="spec-list">
+          <div><dt>Your week</dt><dd>Heat per day for the last seven days, and the modes you used.</dd></div>
+          <div><dt>Profiles</dt><dd>Share one hoodie. Each profile keeps its own target and modes.</dd></div>
+          <div><dt>Updates</dt><dd>The app updates the hoodie over Bluetooth. Keep the phone within 10 feet while it runs.</dd></div>
+          <div><dt>Auto-off</dt><dd>Auto-off when still stops the heat after {{stillAutoOffMin}} minutes without movement. It is on by default.</dd></div>
+          <div><dt>Units</dt><dd>°F or °C.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section closer-band">
+    <div class="wrap closer">
+      <p class="display display--xl"><span>Try every screen</span> <span>in your browser.</span></p>
+      <a class="btn" href="{{appUrl}}" target="_blank" rel="noopener">Open the app<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+    </div>
+  </section>

@@ -1,0 +1,95 @@
+---
+title: Build your hoodie | Warmup
+description: Pick a color, a print and a size. The Warmup heated hoodie is $149 with two snap-in cells, free shipping and 30-day returns.
+key: hoodie
+---
+  <section class="section section--first build" id="build">
+    <div class="wrap build__grid">
+      <div class="build__preview">
+        <div class="studio" id="preview" data-color="black">
+          <img id="preview-img" src="img/hoodie-black.webp" width="1104" height="1180" fetchpriority="high" alt="Black Warmup hoodie, front view">
+        </div>
+      </div>
+      <form class="build__form" id="build-form" novalidate>
+        <h1 class="display">Build your hoodie</h1>
+        <p class="lede">Pick a color, a print and a size. Every version has the same panels, cells and app.</p>
+
+        <fieldset class="opt">
+          <legend>Color <span class="opt__value" id="color-name">Black</span></legend>
+          <div class="swatches">
+            {{html.swatches}}
+          </div>
+        </fieldset>
+
+        <fieldset class="opt">
+          <legend>Print</legend>
+          <div class="rows">
+            {{html.printRows}}
+          </div>
+        </fieldset>
+
+        <fieldset class="opt">
+          <legend>Size <span class="opt__value">Unisex fit</span></legend>
+          <div class="sizes">
+            {{html.sizeOptions}}
+          </div>
+        </fieldset>
+
+        <fieldset class="opt">
+          <legend>Cells</legend>
+          <div class="rows">
+            {{html.powerRows}}
+          </div>
+        </fieldset>
+
+        <div class="build__buy">
+          <p class="build__total"><span>Total</span><output id="total" for="print-none print-orbit print-custom power-standard power-spare">${{price}}</output></p>
+          <button class="btn btn--wide" type="submit" id="add-btn">Add to bag</button>
+        </div>
+        <p class="fine">{{guarantee}}</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section specs" id="specs">
+    <div class="wrap split">
+      <figure class="photo photo--tall split__media"><img src="img/back-orbit.webp" width="800" height="1088" loading="lazy" alt="Back view of a person wearing the bone Warmup hoodie with the Orbit line-art print and the Warmup logo"></figure>
+      <div class="split__text">
+        <h2 class="display">Specs</h2>
+        <dl class="spec-list">
+          <div><dt>Heating</dt><dd>Three graphene panels: left chest, right chest and upper back</dd></div>
+          <div><dt>Sensor</dt><dd>Skin temperature sensor in the collar</dd></div>
+          <div><dt>Cells</dt><dd>Two snap-in cells, {{cellMah}} mAh and {{cellG}} g each</dd></div>
+          <div><dt>Controller</dt><dd>Bluetooth controller in the hem, with a button</dd></div>
+          <div><dt>Fabric</dt><dd>{{fabric}}</dd></div>
+          <div><dt>Weight</dt><dd>{{weightG}} g in size M with both cells in</dd></div>
+          <div><dt>Sizes</dt><dd>{{html.sizeRange}}, unisex fit</dd></div>
+          <div><dt>App</dt><dd>Free, for iPhone and Android</dd></div>
+        </dl>
+        <a class="link" href="how-it-works.html">How the heating works<svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section care" id="care">
+    <div class="wrap split split--flip">
+      <div class="split__text">
+        <h2 class="display">Machine washable with the cells out</h2>
+        <ol class="steps">
+          <li><h3>Snap out both cells</h3><p>They pull straight off the magnetic connector.</p></li>
+          <li><h3>Close the side seam flaps</h3><p>That keeps the connectors from catching.</p></li>
+          <li><h3>Turn the hoodie inside out</h3><p>That protects the hem controller and the panels.</p></li>
+          <li><h3>Wash cold on a gentle cycle, then hang dry</h3><p>Never iron on the panels. The hoodie is rated for {{washes}} washes.</p></li>
+        </ol>
+        <p class="fine">Turn on wash mode in the app first. It locks the heating so the hoodie cannot heat by accident.</p>
+      </div>
+      <figure class="photo split__media"><img src="img/cells-swap.webp" width="1600" height="1200" loading="lazy" alt="A hand sliding a cell into the opening in the hoodie's side seam"></figure>
+    </div>
+  </section>
+
+  <section class="section closer-band">
+    <div class="wrap closer">
+      <p class="display display--xl"><span>Questions before</span> <span>you order?</span></p>
+      <a class="btn" href="help.html">Read the help page</a>
+    </div>
+  </section>

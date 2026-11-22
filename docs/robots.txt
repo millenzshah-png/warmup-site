@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://millenzshah-png.github.io/warmup-site/sitemap.xml
